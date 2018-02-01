@@ -75,7 +75,7 @@ class Syncdb extends Command {
 			if(isset($dbData['index']) && is_array($dbData['index'])) {
 				foreach ($dbData['index'] as $key => $v) {
 					
-					$createTable.=" KEY `ind_".$v['columns']."` (`".$v['columns']."`)\n";
+					$createTable.=" KEY `ind_".$v['columns']."` (`".$v['columns']."`),\n";
 					$index_columns[] = $v['columns'];
 				}
 				$createTable = trim($createTable,',');
