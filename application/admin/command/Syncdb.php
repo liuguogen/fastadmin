@@ -78,16 +78,22 @@ class Syncdb extends Command {
 					$createTable.=" KEY `ind_".$v['columns']."` (`".$v['columns']."`),\n";
 					$index_columns[] = $v['columns'];
 				}
-				$createTable = trim($createTable,',');
+				$createTable = substr($createTable,0,strrpos($createTable,','))."\n";
+				
 			}else {
-				$createTable = trim($createTable,',');
+				$createTable = substr($createTable,0,strrpos($createTable,','))."\n";
 			}
+			
 			$createTable.=" )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci\n";
+
+
+			
 			//设置字段缓存
 			Cache::set('cache_columns_'.$table,array_keys($dbData['columns']),0);
 			Cache::set('cache_index_'.$table,$index_columns,0);
 			$output->info($createTable);
 			try {
+
 	            Db::query($createTable,[],true);
 
 	        } catch (\Exception $e) {
