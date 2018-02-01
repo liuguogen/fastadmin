@@ -1,15 +1,15 @@
-@import url("/assets/css/bootstrap.min.css");
-@import url("/assets/css/fastadmin.min.css");
-@import url("/assets/css/skins/skin-green.css");
-@import url("/assets/css/iconfont.css");
-@import url("/assets/libs/font-awesome/css/font-awesome.min.css");
-@import url("/assets/libs/toastr/toastr.min.css");
-@import url("/assets/libs/layer/dist/theme/default/layer.css");
-@import url("/assets/libs/bootstrap-table/dist/bootstrap-table.min.css");
-@import url("/assets/libs/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css");
-@import url("/assets/libs/bootstrap-daterangepicker/daterangepicker.css");
-@import url("/assets/libs/nice-validator/dist/jquery.validator.css");
-@import url("/assets/libs/selectpage/selectpage.css");
+@import url("../css/bootstrap.min.css");
+@import url("../css/fastadmin.min.css");
+@import url("../css/skins/skin-green.css");
+@import url("../css/iconfont.css");
+@import url("../libs/font-awesome/css/font-awesome.min.css");
+@import url("../libs/toastr/toastr.min.css");
+@import url("../libs/layer/dist/theme/default/layer.css");
+@import url("../libs/bootstrap-table/dist/bootstrap-table.min.css");
+@import url("../libs/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css");
+@import url("../libs/bootstrap-daterangepicker/daterangepicker.css");
+@import url("../libs/nice-validator/dist/jquery.validator.css");
+@import url("../libs/selectpage/selectpage.css");
 body {
   background: #f1f4f6;
 }
@@ -444,7 +444,7 @@ form.form-horizontal .control-label {
   display: none;
 }
 #treeview .jstree-last {
-  background-image: url("/assets/img/32px.png");
+  background-image: url("../img/32px.png");
   background-position: -292px -4px;
   background-repeat: repeat-y;
 }
@@ -707,7 +707,7 @@ form.form-horizontal .control-label {
 }
 .layui-layer-fast .layui-layer-setwin .layui-layer-close2,
 .layui-layer-fast .layui-layer-setwin .layui-layer-close2:hover {
-  background: url('/assets/libs/layer/dist/theme/default/icon.png') no-repeat -149px -31px !important;
+  background: url('../libs/layer/dist/theme/default/icon.png') no-repeat -149px -31px !important;
   top: -30px;
   right: -30px;
 }
